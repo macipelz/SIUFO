@@ -1,0 +1,224 @@
+object partmasuk: Tpartmasuk
+  Left = 468
+  Top = 174
+  Width = 383
+  Height = 466
+  Caption = 'Sparepart Masuk'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 24
+    Top = 16
+    Width = 92
+    Height = 19
+    Caption = 'Nomor Pesan'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Top = 56
+    Width = 120
+    Height = 19
+    Caption = 'Nomor Sparepart'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Top = 96
+    Width = 112
+    Height = 19
+    Caption = 'Nama Sparepart'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Top = 136
+    Width = 92
+    Height = 19
+    Caption = 'Jumlah Pesan'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 24
+    Top = 176
+    Width = 52
+    Height = 19
+    Caption = 'Tanggal'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 184
+    Top = 56
+    Width = 153
+    Height = 23
+    Color = cl3DLight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object ComboBox1: TComboBox
+    Left = 184
+    Top = 16
+    Width = 153
+    Height = 23
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ItemHeight = 15
+    ParentFont = False
+    TabOrder = 1
+    OnChange = ComboBox1Change
+  end
+  object Edit2: TEdit
+    Left = 184
+    Top = 96
+    Width = 153
+    Height = 23
+    Color = cl3DLight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 184
+    Top = 136
+    Width = 65
+    Height = 23
+    Color = cl3DLight
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'TAMBAH'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 104
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'SIMPAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 184
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'EDIT'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 264
+    Top = 216
+    Width = 75
+    Height = 25
+    Caption = 'HAPUS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button4Click
+  end
+  object DBGrid1: TDBGrid
+    Left = 24
+    Top = 256
+    Width = 320
+    Height = 153
+    DataSource = dm1.Source1
+    TabOrder = 8
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnDblClick = DBGrid1DblClick
+  end
+  object DateTimePicker1: TDateTimePicker
+    Left = 184
+    Top = 176
+    Width = 153
+    Height = 21
+    Date = 42951.449448437500000000
+    Time = 42951.449448437500000000
+    TabOrder = 9
+  end
+end
